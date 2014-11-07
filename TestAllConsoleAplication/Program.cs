@@ -9,6 +9,11 @@ namespace TestAllConsoleAplication
     {
         static void Main(string[] args)
         {
+            string str = "awdaw OR clkmekcnes OR acnlen OR slmclske OR";
+            str = str.Substring(0, str.LastIndexOf("OR"));
+            Console.WriteLine(str);
+            Console.ReadKey();
         }
+        
     }
 }
