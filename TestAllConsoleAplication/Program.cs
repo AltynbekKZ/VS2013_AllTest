@@ -9,9 +9,17 @@ namespace TestAllConsoleAplication
     {
         static void Main(string[] args)
         {
-            string str = "awdaw OR clkmekcnes OR acnlen OR slmclske OR";
-            str = str.Substring(0, str.LastIndexOf("OR"));
-            Console.WriteLine(str);
+            string str = "lskfmsfkshef s FSfSF*.docx;";
+            string[] list = str.Split(';');
+
+            list = list.Where(s => !string.IsNullOrEmpty(s)).ToArray();
+
+
+            
+            foreach (string s in list)
+            {
+                Console.WriteLine(s);
+            }
             Console.ReadKey();
         }
         
